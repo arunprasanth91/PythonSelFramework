@@ -19,7 +19,7 @@ def setup(request):
         driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
     elif browser_name == "IE":
         print("IE driver")
-    driver.get("https://rahulshettyacademy.com/angularpractice/")
+    driver.get("https://demo-qa.com/angularpractice/")
     driver.maximize_window()
 
     request.cls.driver = driver

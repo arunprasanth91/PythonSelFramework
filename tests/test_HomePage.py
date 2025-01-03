@@ -1,6 +1,3 @@
-
-from selenium.webdriver.support.select import Select
-from selenium import webdriver
 import pytest
 
 from TestData.HomePageData import HomePageData

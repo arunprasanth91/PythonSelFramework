@@ -3,7 +3,7 @@ import openpyxl
 
 class HomePageData:
 
-    test_HomePage_data = [{"firstname":"Rahul","lastname":"shetty","gender":"Male"}, {"firstname":"Anshika", "lastname":"shetty", "gender":"Female"}]
+    test_HomePage_data = [{"firstname":"demo-qa","lastname":"demouser","gender":"Male"}, {"firstname":"Anshika", "lastname":"demouser", "gender":"Female"}]
 
     @staticmethod
     def getTestData(test_case_name):
@@ -14,7 +14,7 @@ class HomePageData:
             if sheet.cell(row=i, column=1).value == test_case_name:
 
                 for j in range(2, sheet.max_column + 1):  # to get columns
-                    # Dict["lastname"]="shetty
+                    # Dict["lastname"]="demouser
                     Dict[sheet.cell(row=1, column=j).value] = sheet.cell(row=i, column=j).value
         return[Dict]
 
